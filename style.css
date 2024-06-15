@@ -56,6 +56,10 @@ nav > ul > li > a {
   width: auto;
 }
 
+nav > ul > li > a:hover {
+  color: var(--soft-red);
+}
+
 main {
   width: 100%;
   max-width: 1110px;
@@ -68,6 +72,7 @@ main {
   "image image new"
   "title info new";
   gap: 28px;
+  margin-bottom: 70px;
 }
 
 .image {
@@ -93,35 +98,6 @@ main {
   width: auto
 }
 
-.new {
-  grid-area: new;
-  background-color: var(--very-dark-blue);
-  padding: 32px 24px;
-}
-
-.new > h2 {
-  color: var(--soft-orange);
-  font-size: 40px;
-  font-weight: bold;
-  line-height: 40px;
-  width: auto;
-}
-
-.new h3 {
-  color: var(--off-white);
-  font-size: 20px;
-  font-weight: 900;
-  line-height: 24px;
-  width: auto;
-  margin-top: 34px;
-}
-
-.new p {
-  color: var(--grayish-blue);
-  padding-top: 8px;
-  margin-bottom: 60px;
-}
-
 .btn {
   display: inline-block;
   width: 185px;
@@ -138,6 +114,45 @@ main {
   margin-top: 29px;
 }
 
+.btn:hover {
+  background-color: var(--very-dark-blue);
+  color: var(--off-white);
+}
+
+.new {
+  grid-area: new;
+  background-color: var(--very-dark-blue);
+  padding: 32px 24px;
+}
+
+.new > h2 {
+  color: var(--soft-orange);
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 40px;
+  width: auto;
+  margin-bottom: 24px;
+}
+
+.new a {
+  display: inline-block;
+  color: var(--off-white);
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 24px;
+  width: auto;
+}
+
+.new a:hover {
+  color: var(--soft-orange);
+}
+
+.new p {
+  color: var(--grayish-blue);
+  padding-top: 8px;
+  margin-bottom: 60px;
+}
+
 .numbers {
   display: flex;
   justify-content: space-between;
@@ -148,6 +163,33 @@ main {
 .nums {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+p.num {
+  color: var(--soft-red) !important; 
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 32px;
+}
+
+.content-num a {
+  display: inline-block;
+  color: var(--very-dark-blue);
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 24px;
+  margin-top: 12px;
+  margin-bottom: 9px;
+}
+
+.content-num a:hover {
+  color: var(--soft-red);
+}
+
+.content-num p {
+  color: var(--dark-grayish-blue);
+  line-height: 26px;
 }
 
 .img-num {
@@ -161,6 +203,8 @@ main {
 footer {
   width: 100%;
   max-width: 1110px;
+  margin: 0 auto;
+  margin-top: 125px;
 }
 
 .attribution {
@@ -216,6 +260,7 @@ footer {
     "title"
     "info"
     "new";
+    margin-bottom: 64px;
   }
 
   .btn {
@@ -228,5 +273,7 @@ footer {
 
   footer {
     padding: 16px;
+    margin-bottom: 80px;
+    margin-top: 40px;
   }
 }

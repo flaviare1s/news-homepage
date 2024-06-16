@@ -30,6 +30,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  background-color: var(--off-white);
 }
 
 header {
@@ -238,7 +239,7 @@ footer {
     width: 100%;
     position: fixed;
     top: 0px;
-    background-color: white;
+    background-color: var(--off-white);
   }
 
   .logo {

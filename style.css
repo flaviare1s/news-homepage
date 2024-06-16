@@ -39,7 +39,7 @@ header {
   width: 100%;
   max-width: 1110px;
   margin-top: 35px;
-  padding: 55px 0px;
+  padding: 55px 16px;
 }
 
 nav > ul {
@@ -50,6 +50,7 @@ nav > ul {
 }
 
 nav > ul > li > a {
+  display: inline-block;
   color: var(--dark-grayish-blue);
   font-size: 15px;
   line-height: 26px;
@@ -63,6 +64,7 @@ nav > ul > li > a:hover {
 main {
   width: 100%;
   max-width: 1110px;
+  padding: 0px 16px;
 }
 
 .grid {
@@ -222,15 +224,11 @@ footer {
 }
 
 .active {
-  display: block;
+  display: block !important;
 }
 
 .hidden {
-  display: none;
-}
-
-#menu-overlay {
-  display: none;
+  display: none !important;
 }
 
 @media (max-width: 700px) {
@@ -315,9 +313,11 @@ footer {
   nav > ul > li  > a {
     color: var(--very-dark-blue);
     font-size: 18px;
+    padding: 24px 0px;
   }
 
-  nav > ul {
+  #nav {
+    display: none;
     flex-direction: column;
     align-items: flex-start;
     position: absolute;
@@ -328,11 +328,6 @@ footer {
     padding-top: 145px;
     padding-left: 24px;
     width: 256px;
-  }
-
-  #nav {
-    display: none;
-    flex-direction: column;
   }
 
   #menu-overlay {
